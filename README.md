@@ -40,13 +40,15 @@ pip install ffmpeg-downloader
 1. Run the Python script `audio_categorization_tool.py`.
 2. The GUI will prompt you to select the folder containing the audio files you want to categorize.
 3. Once the folder is selected, the tool will display the first audio file in the folder.
-4. Listen to the audio file and select the appropriate category using the provided options.
-5. Use the "Next" button to move to the next audio file and repeat the process until all files are categorized.
-6. If you need to skip to a specific file, you can use the "Skip to" button and enter the file number index.
-7. The tool will save your categorization responses automatically as you progress.
-8. Once all files are categorized, the tool will display a completion message. You can find the coding results in the results folder.
-9. You can delete the state file for each subject from the bookmark folder if you want to start categorizing from the beginning.
+4. **A waveform of the audio file will be displayed to assist you in visualizing the sound patterns, making it easier to categorize the audio accurately.**
+5. Listen to the audio file and select the appropriate category using the provided options.
+6. Use the "Next" button to move to the next audio file and repeat the process until all files are categorized.
+7. If you need to skip to a specific file, you can use the "Skip to" button and enter the file number index.
+8. The tool will save your categorization responses automatically as you progress.
+9. Once all files are categorized, the tool will display a completion message. You can find the coding results in the results folder.
+10. You can delete the state file for each subject from the bookmark folder if you want to start categorizing from the beginning.
 
+![Result Screenshot](https://github.com/EDB-Accelerator/LENA-coder/blob/main/screenshot2.png?raw=true)****
 ## Dependencies
 
 - Python 3.8
