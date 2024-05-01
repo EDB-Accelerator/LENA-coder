@@ -30,7 +30,7 @@ brew install portaudio
 
 If you're using Windows, you might need to install `ffmpeg` using Homebrew. 
 ```bash
-brew install ffmpeg-downloader
+pip install ffmpeg-downloader
 ```
 
 
