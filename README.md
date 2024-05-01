@@ -58,10 +58,11 @@ pip install ffmpeg-downloader
 - Pandas
 - Tkinter
 
-## Authors
+## Author/Testers
 - Kyunghun Lee (National Institutes of Health)
 - Lauren Henry (National Institutes of Health)
 - Ellie Hansen (National Institutes of Health)
+- Elizabeth Tandilashvili (National Institutes of Health)
 
 Advised by Melissa Brotman (National Institutes of Health)
 
