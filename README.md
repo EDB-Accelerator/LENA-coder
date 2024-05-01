@@ -16,18 +16,23 @@ Alternately, download the repository as a ZIP file by clicking [here](https://gi
 
 2. Navigate to the extracted directory using a terminal or command prompt.
 
-3. Create and activate a Python 3.8 Anaconda environment using the provided `py38.yml` file:
+3. Create and activate a Python 3.8 Anaconda environment using the provided `requirements.txt` file:
 ```bash
-conda env create -f py38.yml
-conda activate py38
+pip install -r requirements.txt
 ```
 
 ### Additional Setup for macOS Users
 
-If you're using macOS, you need to install `portaudio` using Homebrew. If you haven't installed Homebrew yet, you can do so by following the instructions [here](https://brew.sh). Once Homebrew is installed, run the following command on your Terminal:
+If you're using macOS, you might need to install `portaudio` using Homebrew. If you haven't installed Homebrew yet, you can do so by following the instructions [here](https://brew.sh). Once Homebrew is installed, run the following command on your Terminal:
 ```bash
 brew install portaudio
 ```
+
+If you're using Windows, you might need to install `ffmpeg` using Homebrew. 
+```bash
+brew install ffmpeg-downloader
+```
+
 
 ## Usage
 
