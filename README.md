@@ -27,8 +27,9 @@ If you're using macOS, you might need to install `portaudio` using Homebrew. If 
 ```bash
 brew install portaudio
 ```
+### Additional Setup for Windows10/11 Users
 
-If you're using Windows, you might need to install `ffmpeg` using Homebrew. 
+If you're using Windows10/11, you might need to install `ffmpeg` using Homebrew. 
 ```bash
 pip install ffmpeg-downloader
 ```
