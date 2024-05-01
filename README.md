@@ -62,4 +62,4 @@ Advised by Melissa Brotman (National Institutes of Health)
 
 
 ## License
-This tool was originally developed for the LENA project by the Neuroscience and Novel Therapeutics Unit (NNT) at the National Institutes of Health; however, it is open for use by anyone. This program is licensed under the MIT License. For more information, see the [LICENSE](https://www.mit.edu/~amini/LICENSE.md)  for details.
+This tool was originally developed for the LENA project by the Neuroscience and Novel Therapeutics Unit (NNT) at the National Institutes of Health; however, it is open for use by anyone. This program is licensed under the MIT License. For more information, see the [LICENSE](https://github.com/EDB-Accelerator/LENA-coder/raw/main/LICENSE.txt)  for details.
