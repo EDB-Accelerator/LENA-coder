@@ -1,0 +1,5 @@
+.pickle/*.*
+bookmark/**
+results/**
+last_directory.txt
+codername.txt
