@@ -29,7 +29,7 @@ brew install portaudio
 ```
 ### Additional Setup for Windows10/11 Users
 
-If you're using Windows10/11, you might need to install `ffmpeg` using Homebrew. 
+If you're using Windows10/11, you might need to install `ffmpeg` using this command. 
 ```bash
 pip install ffmpeg-downloader
 ```
