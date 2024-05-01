@@ -14,7 +14,7 @@ git clone git@github.com:EDB-Accelerator/LENA-coder.git
 ```
 Alternately, download the repository as a ZIP file by clicking [here](https://github.com/EDB-Accelerator/LENA-coder/archive/refs/heads/main.zip).
 
-2. Navigate to the extracted directory using a terminal or command prompt.
+2. Navigate to the extracted directory using a terminal or command prompt or Anaconda Python Terminal (If you use Anaconda, python 3.8 is recommended).
 
 3. Create and activate a Python 3.8 Anaconda environment using the provided `requirements.txt` file:
 ```bash
