@@ -48,7 +48,8 @@ pip install ffmpeg-downloader
 9. Once all files are categorized, the tool will display a completion message. You can find the coding results in the results folder.
 10. You can delete the state file for each subject from the bookmark folder if you want to start categorizing from the beginning.
 
-![Result Screenshot](https://github.com/EDB-Accelerator/LENA-coder/blob/main/screenshot2.png?raw=true)****
+Sample Result File Screenshot:
+![Result Screenshot](https://github.com/EDB-Accelerator/LENA-coder/blob/main/screenshot2.png?raw=true)
 ## Dependencies
 
 - Python 3.8
