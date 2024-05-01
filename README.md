@@ -12,7 +12,7 @@ This tool is designed to help categorize audio files into different categories s
 ```bash
 git clone git@github.com:EDB-Accelerator/LENA-coder.git
 ```
-Alternately, download the repository as a ZIP file by clicking [here](https://github.com/leekh3/LENA-coder/archive/refs/heads/main.zip).
+Alternately, download the repository as a ZIP file by clicking [here](https://github.com/EDB-Accelerator/LENA-coder/archive/refs/heads/main.zip).
 
 2. Navigate to the extracted directory using a terminal or command prompt.
 
