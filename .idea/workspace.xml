@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="84614aa3-062e-4ff4-b8ae-4c66adeede39" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/audio_categorization_tool.py" beforeDir="false" afterPath="$PROJECT_DIR$/audio_categorization_tool.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

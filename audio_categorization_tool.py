@@ -12,7 +12,8 @@ import pandas as pd
 import tkinter.filedialog as fd
 import tkinter.messagebox as msgbox
 import sys
-
+import shutil
+import tempfile
 
 class AudioPlayerGUI:
     def __init__(self, master):
@@ -472,31 +473,36 @@ class AudioPlayerGUI:
         coder = self.coder_name_entry.get()
         coding_result = self.category_var.get().split()[0]
         coding_result = coding_result.strip('() 😢😱😫😮🚫🤔')  # Cleaning the coding result to save only the number
+
         def convert_string_to_number(text):
-            # Define a dictionary mapping specific strings to numbers
             mapping = {
-                "Cry": 1,
-                "Scream": 2,
-                "Whine/Fuss": 3,
-                "Yelling": 4,
-                "None": 5,
-                "Not": 6
-
+                "Cry": 1, "Scream": 2, "Whine/Fuss": 3, "Yelling": 4, "None": 5, "Not": 6
             }
-            # Return the corresponding number if the text matches, otherwise return None
-            return mapping.get(text, None)  # Returns None if the text is not found
-        coding_result = convert_string_to_number(coding_result)
+            return mapping.get(text, None)
 
-        # Correcting how data is saved to ensure all fields are correctly updated or maintained
+        coding_result = convert_string_to_number(coding_result)
         self.df.loc[self.current_file_index, 'coder'] = coder
         self.df.loc[self.current_file_index, 'coding_result'] = coding_result
-
-        # Ensuring folder name and file index are maintained
         self.df.loc[self.current_file_index, 'folder_name'] = self.folder_name
         self.df.loc[self.current_file_index, 'file_idx'] = self.current_file_index
 
-        # Save the dataframe to pickle every time a change is made
-        self.df.to_pickle(self.dataframe_path)
+        # Temporary directory and file handling for pickle
+        tmp_dir = os.path.join(self.file_directory, ".tmp")
+        if not os.path.exists(tmp_dir):
+            os.makedirs(tmp_dir)
+
+        tmp_pickle = tempfile.NamedTemporaryFile(delete=False, dir=tmp_dir, suffix=".pickle")
+        self.df.to_pickle(tmp_pickle.name)
+        tmp_pickle.close()
+
+        # Temporary file handling for CSV
+        tmp_csv = tempfile.NamedTemporaryFile(delete=False, dir=tmp_dir, suffix=".csv")
+        self.df.to_csv(tmp_csv.name, index=False)
+        tmp_csv.close()
+
+        # Move the temporary files to their main paths
+        shutil.move(tmp_pickle.name, self.dataframe_path)
+        shutil.move(tmp_csv.name, self.results_path)
 
     def load_responses(self):
         # Load responses if they exist, and update the UI accordingly
